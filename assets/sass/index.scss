@@ -1,5 +1,16 @@
 .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaeaea;
+  height: 50px;
+  margin-top: 3px;
+  width: 100%;
 }
