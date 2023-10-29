@@ -1,34 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OhMyFood</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/style.css" />
     <!-- Importation Font Awesome -->
-    <script src="https://kit.fontawesome.com/769289a15d.js" crossorigin="anonymous"></script>
-</head>
-<body>
-
+    <script
+      src="https://kit.fontawesome.com/769289a15d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <!-- Header -->
     <header class="navbar">
-        <img class="navbar__logo" src="/assets/images/logo/ohmyfood@2x.svg" alt="Logo OhMyFood">
-         <!-- Recherche -->
-        <div class="navbar__search">
-            <i class="fa-sharp fa-solid fa-location-dot"></i>
-            <input type="search" name="city_search" value="Paris, Belleville" placeholder="Paris, Belleville">   
-        </div>
+      <img
+        class="navbar__logo"
+        src="/assets/images/logo/ohmyfood@2x.svg"
+        alt="Logo OhMyFood"
+      />
+      <!-- Recherche -->
+      <form class="navbar__search">
+        <i class="fa-sharp fa-solid fa-location-dot"></i>
+        <input
+          class="navbar__search__input"
+          type="search"
+          name="city_search"
+          value="Paris, Belleville"
+          placeholder="Paris, Belleville"
+        />
+      </form>
     </header>
 
     <!--Main-->
     <main>
-        <div class="explore_restaurants">
-            <h1 class="title_reservation">Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-
-
+      <div class="explore_restaurants">
+        <h1 class="explore__title">Réservez le menu qui vous convient</h1>
+        <p class="explore__p">
+          Découvrez des restaurants d'exception, sélectionnés par nos soins.
+        </p>
+        <button
+          class="explore__button"
+          onclick="window.location.href = '#restaurants_cards';"
+        >
+          Explorer nos restaurants
+        </button>
+      </div>
     </main>
     <footer></footer>
-</body>
+  </body>
 </html>
