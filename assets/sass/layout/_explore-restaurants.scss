@@ -2,13 +2,14 @@
 /*Ceci est notre Bloc*/
 .explore_restaurants {
   text-align: center;
+  background-color: #f7f7f7;
+  padding-top: 0.5px;
 }
 /*Ceci est notre élément*/
 .explore__title {
   font-weight: bold;
   font-size: 24px;
   margin: 40px 50px 0;
-  line-height: 28px;
 }
 
 .explore__p {
@@ -26,4 +27,14 @@
   border: none;
   font-weight: 500;
   color: #fff;
+}
+
+/*Media Queries Tablette*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+.explore__title {
+  font-size: 30px;
+}
+/*Media Queries desktop*/
+@media screen and (min-width: 1024px) {
 }

@@ -39,15 +39,53 @@
   padding-left: 10px;
   color: #353535;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: bold;
   font-family: "Roboto", sans-serif;
   width: 30%;
 }
 
+/*Media Queries Tablette*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .navbar__logo {
+    width: 200px;
+    height: auto;
+  }
+  .navbar__search {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin-top: 25px;
+    width: 100%;
+    height: 50px;
+    background-color: #eaeaea;
+  }
+  .navbar__search__input {
+    width: 20%;
+    font-weight: 600;
+  }
+}
+/*Media Queries desktop*/
+@media screen and (min-width: 1024px) {
+  .navbar__search {
+    padding-left: 80px;
+    margin-top: 3px;
+  }
+  .navbar__search__input {
+    margin-right: -22%;
+  }
+  .navbar__logo {
+    width: 200px;
+    height: auto;
+  }
+}
 /* Main explore_restaurants*/
 /*Ceci est notre Bloc*/
 .explore_restaurants {
   text-align: center;
+  background-color: #f7f7f7;
+  padding-top: 0.5px;
 }
 
 /*Ceci est notre élément*/
@@ -55,7 +93,6 @@
   font-weight: bold;
   font-size: 24px;
   margin: 40px 50px 0;
-  line-height: 28px;
 }
 
 .explore__p {
@@ -73,4 +110,105 @@
   border: none;
   font-weight: 500;
   color: #fff;
+}
+
+/*Media Queries Tablette*/
+.explore__title {
+  font-size: 30px;
+}
+
+/*Media Queries desktop*/
+/*Fonction*/
+.fonction {
+  background-color: white;
+  padding: 50px 25px 70px 20px;
+}
+
+.cards_fonction {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out 0.1s;
+}
+.cards_fonction:hover {
+  transform: scale(1.05);
+}
+
+.number {
+  padding: 5px;
+  width: 24px;
+  background: #9356dc;
+  height: 24px;
+  text-align: center;
+  border-radius: 24px;
+  color: #fff;
+  font-size: 15px;
+  margin-right: 25px;
+  z-index: 2;
+}
+
+.container_fonction {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  color: #7e7e7e;
+  background-color: #f6f6f6;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  margin-left: -35px;
+  padding: 0px 0px 0px 28px;
+}
+.container_fonction:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  background-color: #f5edff;
+}
+.container_fonction:hover .fa-solid {
+  color: #9356dc;
+}
+
+.text_fonction {
+  padding-left: 27px;
+  color: #000;
+}
+
+/*Media Queries Tablette*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .fonction {
+    padding: 50px;
+  }
+  .cards_fonction {
+    width: 100%;
+    margin-top: 28px;
+  }
+  .main_fonction {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  .text_fonction {
+    padding-left: 15px;
+  }
+}
+/*Media Queries desktop*/
+@media screen and (min-width: 1024px) {
+  .fonction {
+    padding: 50px 150px 50px;
+  }
+  .cards_fonction {
+    width: 100%;
+    margin-top: 28px;
+  }
+  .main_fonction {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .container_fonction {
+    padding: 5px 20px 5px 25px;
+  }
+  .text_fonction {
+    padding-left: 20px;
+  }
 }
