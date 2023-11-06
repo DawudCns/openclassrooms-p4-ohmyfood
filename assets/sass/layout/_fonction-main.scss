@@ -1,11 +1,11 @@
 /*Fonction*/
 
-.fonction {
+.function {
   background-color: #ffff;
   padding: 50px 25px 70px 20px;
 }
 
-.cards_fonction {
+.function__container__cards {
   display: flex;
   align-items: center;
   margin-top: 25px;
@@ -17,7 +17,7 @@
   }
 }
 
-.number {
+.function__container__cards__number {
   padding: 5px;
   width: 24px;
   background: #9356dc;
@@ -30,7 +30,7 @@
   z-index: 2;
 }
 
-.container_fonction {
+.function__container__cards__item {
   display: flex;
   align-items: center;
   width: 100%;
@@ -45,13 +45,13 @@
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
     background-color: #f5edff;
 
-    .fa-solid {
+    .function__container__cards__item__icon {
       color: #9356dc;
     }
   }
 }
 
-.text_fonction {
+.function__container__cards__item__p {
   padding-left: 27px;
   color: #000;
 }
@@ -59,48 +59,45 @@
 /*Media Queries Tablette*/
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .fonction {
+  .function {
     padding: 50px;
   }
 
-  .cards_fonction {
-    width: 100%;
+  .function__container__cards {
     margin-top: 28px;
   }
 
-  .main_fonction {
-    display: flex;
-    align-items: center;
+  .function__container__cards__item {
     gap: 25px;
   }
 
-  .text_fonction {
+  .function__container__cards__item__p {
     padding-left: 15px;
   }
 }
 
 /*Media Queries desktop*/
 @media screen and (min-width: 1024px) {
-  .fonction {
+  .function {
     padding: 50px 150px 50px;
   }
 
-  .cards_fonction {
+  .function__container__cards {
     width: 100%;
     margin-top: 28px;
   }
 
-  .main_fonction {
+  .function__container {
     display: flex;
     align-items: center;
     gap: 40px;
   }
 
-  .container_fonction {
+  .function__container__cards {
     padding: 5px 20px 5px 25px;
   }
 
-  .text_fonction {
+  .function__container__cards__item__p {
     padding-left: 20px;
   }
 }

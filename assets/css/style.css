@@ -4,6 +4,15 @@
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -11,26 +20,24 @@
 /*header*/
 /*Ceci est notre Bloc*/
 .navbar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  text-align: center;
 }
 .navbar__logo {
-  display: flex;
-  justify-content: center;
   background-color: #fff;
+  margin: 30px;
   width: 165px;
-  margin-top: 15px;
 }
 .navbar__search {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   background-color: #eaeaea;
   height: 50px;
-  margin-top: 15px;
-  width: 100%;
+}
+.navbar__search__icon {
+  margin-left: 50px;
 }
 .navbar__search__input {
   border: none;
@@ -41,48 +48,18 @@
   font-size: 16px;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
-  width: 30%;
+  cursor: pointer;
 }
 
 /*Media Queries Tablette*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .navbar__logo {
     width: 200px;
-    height: auto;
-  }
-  .navbar__search {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    margin-top: 25px;
-    width: 100%;
-    height: 50px;
-    background-color: #eaeaea;
-  }
-  .navbar__search__input {
-    width: 20%;
-    font-weight: 600;
-  }
-}
-/*Media Queries desktop*/
-@media screen and (min-width: 1024px) {
-  .navbar__search {
-    padding-left: 80px;
-    margin-top: 3px;
-  }
-  .navbar__search__input {
-    margin-right: -22%;
-  }
-  .navbar__logo {
-    width: 200px;
-    height: auto;
   }
 }
 /* Main explore_restaurants*/
 /*Ceci est notre Bloc*/
-.explore_restaurants {
+.explore__restaurants {
   text-align: center;
   background-color: #f7f7f7;
   padding-top: 0.5px;
@@ -118,24 +95,112 @@
 }
 
 /*Media Queries desktop*/
+.restaurants {
+  margin: 55px 20px 65px;
+}
+.restaurants .restaurants__title {
+  margin-bottom: 35px;
+}
+.restaurants .restaurants__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.restaurants .restaurants__cards .restaurants__cards__link {
+  display: grid;
+  grid-template: 70% 30%/75% 25%;
+  background: #ffffff;
+  color: #000;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  z-index: 0;
+}
+.restaurants .restaurants__cards .restaurants__cards__link:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  filter: brightness(1.1);
+}
+.restaurants .restaurants__cards .restaurants__cards__image {
+  grid-area: 1/1/2/3;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  width: 100%;
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.restaurants .restaurants__cards .restaurants__cards__news {
+  grid-area: 1/2/1/3;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  margin-right: 15px;
+}
+.restaurants .restaurants__cards .restaurants__cards__news .restaurants__cards__news__text {
+  height: 20px;
+  background-color: #99e2d0;
+  color: #008766;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 10px;
+  border-radius: 2px;
+}
+.restaurants .restaurants__cards .restaurants__cards__item {
+  padding: 16px 25px 16px 12px;
+}
+.restaurants .restaurants__cards .restaurants__cards__item .restaurants__cards__item__text {
+  margin-top: 5px;
+  font-size: 17px;
+  font-weight: 300;
+}
+.restaurants .restaurants__cards .restaurants__cards__icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 25px;
+}
+.restaurants .restaurants__cards i.icon-regular {
+  margin-right: -24px;
+}
+.restaurants .restaurants__cards i.icon-solid:hover {
+  background-image: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 1;
+  line-height: 1;
+  cursor: pointer;
+  transition: opacity 0.8s ease-in 0.3s;
+}
+.restaurants .restaurants__cards i.icon-solid:not(:hover) {
+  background-image: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  line-height: 1;
+  transition: opacity 0.8s ease-in 0.3s;
+  opacity: 0;
+}
+
 /*Fonction*/
-.fonction {
+.function {
   background-color: white;
   padding: 50px 25px 70px 20px;
 }
 
-.cards_fonction {
+.function__container__cards {
   display: flex;
   align-items: center;
   margin-top: 25px;
   transform: scale(1);
   transition: transform 0.3s ease-in-out 0.1s;
 }
-.cards_fonction:hover {
+.function__container__cards:hover {
   transform: scale(1.05);
 }
 
-.number {
+.function__container__cards__number {
   padding: 5px;
   width: 24px;
   background: #9356dc;
@@ -148,7 +213,7 @@
   z-index: 2;
 }
 
-.container_fonction {
+.function__container__cards__item {
   display: flex;
   align-items: center;
   width: 100%;
@@ -160,55 +225,52 @@
   margin-left: -35px;
   padding: 0px 0px 0px 28px;
 }
-.container_fonction:hover {
+.function__container__cards__item:hover {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
   background-color: #f5edff;
 }
-.container_fonction:hover .fa-solid {
+.function__container__cards__item:hover .function__container__cards__item__icon {
   color: #9356dc;
 }
 
-.text_fonction {
+.function__container__cards__item__p {
   padding-left: 27px;
   color: #000;
 }
 
 /*Media Queries Tablette*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .fonction {
+  .function {
     padding: 50px;
   }
-  .cards_fonction {
-    width: 100%;
+  .function__container__cards {
     margin-top: 28px;
   }
-  .main_fonction {
-    display: flex;
-    align-items: center;
+  .function__container__cards__item {
     gap: 25px;
   }
-  .text_fonction {
+  .function__container__cards__item__p {
     padding-left: 15px;
   }
 }
 /*Media Queries desktop*/
 @media screen and (min-width: 1024px) {
-  .fonction {
+  .function {
     padding: 50px 150px 50px;
   }
-  .cards_fonction {
+  .function__container__cards {
     width: 100%;
     margin-top: 28px;
   }
-  .main_fonction {
+  .function__container {
     display: flex;
     align-items: center;
     gap: 40px;
   }
-  .container_fonction {
+  .function__container__cards {
     padding: 5px 20px 5px 25px;
   }
-  .text_fonction {
+  .function__container__cards__item__p {
     padding-left: 20px;
   }
 }

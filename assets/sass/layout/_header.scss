@@ -1,27 +1,26 @@
 /*header*/
 /*Ceci est notre Bloc*/
 .navbar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  text-align: center;
 
   &__logo {
-    display: flex;
-    justify-content: center;
     background-color: #fff;
+    margin: 30px;
     width: 165px;
-    margin-top: 15px;
   }
 
   &__search {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     background-color: #eaeaea;
     height: 50px;
-    margin-top: 15px;
-    width: 100%;
+
+    &__icon {
+      margin-left: 50px;
+    }
 
     &__input {
       border: none;
@@ -32,7 +31,7 @@
       font-size: 16px;
       font-weight: bold;
       font-family: "Roboto", sans-serif;
-      width: 30%;
+      cursor: pointer;
     }
   }
 }
@@ -40,36 +39,5 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .navbar__logo {
     width: 200px;
-    height: auto;
-  }
-  .navbar__search {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    margin-top: 25px;
-    width: 100%;
-    height: 50px;
-    background-color: #eaeaea;
-  }
-  .navbar__search__input {
-    width: 20%;
-    font-weight: 600;
-  }
-}
-
-/*Media Queries desktop*/
-@media screen and (min-width: 1024px) {
-  .navbar__search {
-    padding-left: 80px;
-    margin-top: 3px;
-  }
-  .navbar__search__input {
-    margin-right: -22%;
-  }
-  .navbar__logo {
-    width: 200px;
-    height: auto;
   }
 }

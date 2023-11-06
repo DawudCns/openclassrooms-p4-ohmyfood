@@ -21,7 +21,7 @@
       />
       <!-- Recherche -->
       <form class="navbar__search">
-        <i class="fa-sharp fa-solid fa-location-dot"></i>
+        <i class="fa-sharp fa-solid fa-location-dot navbar__search__icon"></i>
         <input
           class="navbar__search__input"
           type="search"
@@ -34,47 +34,152 @@
 
     <!--Main-->
     <main>
-      <div class="explore_restaurants">
+      <section class="explore__restaurants">
         <h1 class="explore__title">Réservez le menu qui vous convient</h1>
         <p class="explore__p">
           Découvrez des restaurants d'exception, sélectionnés par nos soins.
         </p>
-        <button
-          class="explore__button"
-          onclick="window.location.href = '#restaurants_cards';"
-        >
-          Explorer nos restaurants
-        </button>
-      </div>
-
+        <button class="explore__button">Explorer nos restaurants</button>
+      </section>
       <!--fonctionnement-->
-      <section class="fonction">
+      <section class="function">
         <h2>Fonctionnements</h2>
-        <div class="main_fonction">
-          <div class="cards_fonction">
-            <div class="number">1</div>
-            <div class="container_fonction">
-              <i class="fa-sharp fa-solid fa-mobile-screen-button"></i>
-              <p class="text_fonction">Choisissez un restaurant</p>
+        <div class="function__container">
+          <div class="function__container__cards">
+            <div class="function__container__cards__number">1</div>
+            <div class="function__container__cards__item">
+              <i
+                class="function__container__cards__item__icon fa-sharp fa-solid fa-mobile-screen-button"
+              ></i>
+              <p class="function__container__cards__item__p">
+                Choisissez un restaurant
+              </p>
             </div>
           </div>
-          <div class="cards_fonction">
-            <div class="number">2</div>
-            <div class="container_fonction">
-              <i class="fa-solid fa-bars"></i>
-              <p class="text_fonction">Composer votre menu</p>
+          <div class="function__container__cards">
+            <div class="function__container__cards__number">2</div>
+            <div class="function__container__cards__item">
+              <i
+                class="function__container__cards__item__icon fa-solid fa-bars"
+              ></i>
+              <p class="function__container__cards__item__p">
+                Composer votre menu
+              </p>
             </div>
           </div>
-          <div class="cards_fonction">
-            <div class="number">3</div>
-            <div class="container_fonction">
-              <i class="fa-solid fa-store"></i>
-              <p class="text_fonction">Déguster au restaurant</p>
+          <div class="function__container__cards">
+            <div class="function__container__cards__number">3</div>
+            <div class="function__container__cards__item">
+              <i
+                class="function__container__cards__item__icon fa-solid fa-store"
+              ></i>
+              <p class="function__container__cards__item__p">
+                Déguster au restaurant
+              </p>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Restaurants -->
+      <section class="restaurants">
+        <h2 class="restaurants__title">Restaurants</h2>
+        <div class="restaurants__cards">
+          <a href="restaurants/la-palette-du-gout.html" class="restaurants__cards__link">
+            <div class="restaurants__cards__news">
+              <p class="restaurants__cards__news__text">Nouveau</p>
+            </div>
+            <img
+              class="restaurants__cards__image"
+              src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+              alt="entrée saumon fumé salade verte et soja"
+            />
+            <div class="restaurants__cards__item">
+              <h3>La palette du goût</h3>
+              <p class="restaurants__cards__item__text">Ménilmontant</p>
+            </div>
+            <div class="restaurants__cards__icons">
+              <i class="fa-sharp fa-regular fa-heart fa-xl icon-regular"></i>
+              <i class="fa-sharp fa-solid fa-heart fa-xl icon-solid"></i>
+            </div>
+          </a>
+
+          <a href="restaurants/la-note-enchantee.html" class="restaurants__cards__link">
+            <div class="restaurants__cards__news">
+              <p class="restaurants__cards__news__text">Nouveau</p>
+            </div>
+            <img
+              class="restaurants__cards__image"
+              src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+              alt="plat de poisson blanc, croquettes de pomme de terre sauce tomate olives"
+            />
+            <div class="restaurants__cards__item">
+              <h3>La note enchantée</h3>
+              <p class="restaurants__cards__item__text">Charonne</p>
+            </div>
+            <div class="restaurants__cards__icons">
+              <i class="fa-sharp fa-regular fa-heart fa-xl icon-regular"></i>
+              <i class="fa-sharp fa-solid fa-heart fa-xl icon-solid"></i>
+            </div>
+          </a>
+
+          <a href="restaurants/a-la-francaise.html" class="restaurants__cards__link">
+            <img
+              class="restaurants__cards__image"
+              src="assets\images\restaurants\toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+              alt="oeufs mollets façon bénédicte"
+            />
+            <div class="restaurants__cards__item">
+              <h3>À la française</h3>
+              <p class="restaurants__cards__item__text">Cité Rouge</p>
+            </div>
+            <div class="restaurants__cards__icons">
+              <i class="fa-sharp fa-regular fa-heart fa-xl icon-regular"></i>
+              <i class="fa-sharp fa-solid fa-heart fa-xl icon-solid"></i>
+            </div>
+          </a>
+
+          <a href="restaurants/le-delices-des-sens.html" class="restaurants__cards__link">
+            <img
+              class="restaurants__cards__image"
+              src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+              alt="poisson grillé aux poivrons sauce asiatique"
+            />
+            <div class="restaurants__cards__item">
+              <h3>Le délice des sens</h3>
+              <p class="restaurants__cards__item__text">Folie-Méricourt</p>
+            </div>
+            <div class="restaurants__cards__icons">
+              <i class="fa-sharp fa-regular fa-heart fa-xl icon-regular"></i>
+              <i class="fa-sharp fa-solid fa-heart fa-xl icon-solid"></i>
+            </div>
+          </a>
+        </div>
     </main>
-    <footer></footer>
+   <!-- footer -->
+   <footer class="footer">
+    <div class="footer_icons">
+      <img src="assets/images/logo/ohmyfood@2x.svg" alt="logo_oh_my_food" />
+    </div>
+
+    <div class="footer_group">
+      <div class="footer_column">
+        <i class="fa-solid fa-utensils fa-sm"></i>
+        <a href="#" class="link_footer">Proposer un restaurant</a>
+      </div>
+
+      <div class="footer_column">
+        <i class="fa-solid fa-handshake-angle fa-sm"></i>
+        <a href="#" class="footer_link">Devenir partenaire</a>
+      </div>
+
+      <div class="footer_column">
+        <a href="#">Mentions légales</a>
+      </div>
+
+      <div class="footer_column">
+        <a href="mailto:ohmyfood@contact.com" target="_blank">Contact</a>
+      </div>
+    </footer>
   </body>
 </html>
