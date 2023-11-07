@@ -1,3 +1,4 @@
+/* Restaurants */
 .restaurants {
   margin: 55px 20px 65px;
 
@@ -102,6 +103,44 @@
       line-height: 1;
       transition: opacity 0.8s ease-in 0.3s;
       opacity: 0;
+    }
+  }
+}
+
+/*Media Queries Tablette*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .restaurants {
+    margin: 55px 40px 65px;
+
+    .restaurants__cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .restaurants__cards__link {
+      flex: 40%;
+    }
+  }
+}
+
+/*Media Queries desktop*/
+@media screen and (min-width: 1024px) {
+  .restaurants {
+    margin: 55px 140px 65px;
+
+    .restaurants__cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      row-gap: 55px;
+      column-gap: 90px;
+    }
+
+    .restaurants__cards__link {
+      flex: 40%;
     }
   }
 }

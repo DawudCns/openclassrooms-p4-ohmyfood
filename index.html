@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OhMyFood</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
@@ -41,6 +42,7 @@
         </p>
         <button class="explore__button">Explorer nos restaurants</button>
       </section>
+
       <!--fonctionnement-->
       <section class="function">
         <h2>Fonctionnements</h2>
@@ -85,7 +87,10 @@
       <section class="restaurants">
         <h2 class="restaurants__title">Restaurants</h2>
         <div class="restaurants__cards">
-          <a href="restaurants/la-palette-du-gout.html" class="restaurants__cards__link">
+          <a
+            href="restaurants/la-palette-du-gout.html"
+            class="restaurants__cards__link"
+          >
             <div class="restaurants__cards__news">
               <p class="restaurants__cards__news__text">Nouveau</p>
             </div>
@@ -104,7 +109,10 @@
             </div>
           </a>
 
-          <a href="restaurants/la-note-enchantee.html" class="restaurants__cards__link">
+          <a
+            href="restaurants/la-note-enchantee.html"
+            class="restaurants__cards__link"
+          >
             <div class="restaurants__cards__news">
               <p class="restaurants__cards__news__text">Nouveau</p>
             </div>
@@ -123,7 +131,10 @@
             </div>
           </a>
 
-          <a href="restaurants/a-la-francaise.html" class="restaurants__cards__link">
+          <a
+            href="restaurants/a-la-francaise.html"
+            class="restaurants__cards__link"
+          >
             <img
               class="restaurants__cards__image"
               src="assets\images\restaurants\toa-heftiba-DQKerTsQwi0-unsplash.jpg"
@@ -139,7 +150,10 @@
             </div>
           </a>
 
-          <a href="restaurants/le-delices-des-sens.html" class="restaurants__cards__link">
+          <a
+            href="restaurants/le-delices-des-sens.html"
+            class="restaurants__cards__link"
+          >
             <img
               class="restaurants__cards__image"
               src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
@@ -155,30 +169,43 @@
             </div>
           </a>
         </div>
+      </section>
     </main>
-   <!-- footer -->
-   <footer class="footer">
-    <div class="footer_icons">
-      <img src="assets/images/logo/ohmyfood@2x.svg" alt="logo_oh_my_food" />
-    </div>
-
-    <div class="footer_group">
-      <div class="footer_column">
-        <i class="fa-solid fa-utensils fa-sm"></i>
-        <a href="#" class="link_footer">Proposer un restaurant</a>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__icons">
+        <img src="assets/images/logo/ohmyfood@2x.svg" alt="logo_oh_my_food" />
       </div>
 
-      <div class="footer_column">
-        <i class="fa-solid fa-handshake-angle fa-sm"></i>
-        <a href="#" class="footer_link">Devenir partenaire</a>
-      </div>
+      <div class="footer__group">
+        <div class="footer__group__column">
+          <i class="fa-solid fa-utensils fa-sm footer__group__column__icon"></i>
+          <a href="#" class="footer__group__column__link--ml"
+            >Proposer un restaurant</a
+          >
+        </div>
 
-      <div class="footer_column">
-        <a href="#">Mentions légales</a>
-      </div>
+        <div class="footer__group__column">
+          <i
+            class="fa-solid fa-handshake-angle fa-sm footer__group__column__icon"
+          ></i>
+          <a href="#" class="footer__group__column__link--ml2"
+            >Devenir partenaire</a
+          >
+        </div>
 
-      <div class="footer_column">
-        <a href="mailto:ohmyfood@contact.com" target="_blank">Contact</a>
+        <div class="footer__group__column">
+          <a href="#" class="footer__group__column__link">Mentions légales</a>
+        </div>
+
+        <div class="footer__group__column">
+          <a
+            href="mailto:ohmyfood@contact.com"
+            target="_blank"
+            class="footer__group__column__link"
+            >Contact</a
+          >
+        </div>
       </div>
     </footer>
   </body>
