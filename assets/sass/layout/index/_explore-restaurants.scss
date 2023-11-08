@@ -1,24 +1,25 @@
 /* Main explore_restaurants*/
-/*Ceci est notre Bloc*/
-.explore__restaurants {
+
+.explore-restaurants {
   text-align: center;
   background-color: #f7f7f7;
   padding-top: 0.5px;
 }
-/*Ceci est notre élément*/
-.explore__title {
+
+.explore-restaurants__title {
   font-weight: bold;
   font-size: 24px;
   margin: 40px 50px 0;
+  padding: 10px 0;
 }
 
-.explore__p {
+.explore-restaurants__p {
   margin: 20px 30px 0;
   font-size: 18px;
   font-weight: 300;
 }
 
-.explore__button {
+.explore-restaurants__button {
   margin: 25px 0 55px;
   border-radius: 25px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -32,6 +33,6 @@
 /*Media Queries Tablette*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 }
-.explore__title {
+.explore-restaurants__title {
   font-size: 30px;
 }

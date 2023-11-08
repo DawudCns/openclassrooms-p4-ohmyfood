@@ -1,0 +1,23 @@
+/*header*/
+
+.main-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 23px 25px 18px;
+}
+
+.main-header__logo {
+  width: 162px;
+  height: auto;
+}
+
+.main-header__link {
+  position: absolute;
+  left: 25px;
+  top: 27px;
+}
+
+.main-header__link__icon {
+  color: #000;
+}

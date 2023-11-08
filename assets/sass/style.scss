@@ -1,5 +1,7 @@
 @import "./base/colors";
 @import "./base/defaults";
 @import "./base/fonts";
-@import "./layout/header", "./layout/explore-restaurants", "./layout/menu",
-  "./layout/footer", "./layout/function-main";
+@import "./layout/index/header", "./layout/index/explore-restaurants",
+  "./layout/index/menu", "./layout/index/function-main";
+@import "./layout/restaurants/header";
+@import "./layout/footer/footer";
