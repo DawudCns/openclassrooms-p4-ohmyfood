@@ -21,3 +21,27 @@
 .main-header__link__icon {
   color: #000;
 }
+
+/*Media Queries Tablette*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .main-header__logo {
+    width: 200px;
+    height: auto;
+  }
+
+  .main-header__link {
+    left: 40px;
+  }
+}
+
+/*Media Queries desktop*/
+@media screen and (min-width: 1024px) {
+  .main-header__logo {
+    width: 200px;
+    height: auto;
+  }
+
+  .main-header__link {
+    left: 60px;
+  }
+}
