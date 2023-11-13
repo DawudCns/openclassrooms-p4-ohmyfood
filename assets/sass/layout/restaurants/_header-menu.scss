@@ -72,3 +72,24 @@
     }
   }
 }
+
+/*Media Queries desktop*/
+@media screen and (min-width: 1024px) {
+  .header-menu__image {
+    height: 375px;
+  }
+  .header-menu__section__container {
+    margin-top: 0px;
+  }
+  .header-menu__section__container__menu {
+    margin-top: 50px;
+    justify-content: center;
+    gap: 25px;
+  }
+  .header-menu__section {
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top: -113px;
+    padding: 55px 0px 5px;
+  }
+}
