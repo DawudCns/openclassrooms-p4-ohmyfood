@@ -92,12 +92,28 @@ ul {
   font-weight: 500;
   color: #fff;
 }
+.explore-restaurants__button:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  filter: brightness(1.2);
+  transition: all 0.3s ease-in-out 0.3s;
+}
+.explore-restaurants__button:not(:hover) {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out 0.3s;
+}
 
 /*Media Queries Tablette*/
 .explore-restaurants__title {
-  font-size: 30px;
+  font-size: 40px;
 }
 
+/*Media Queries desktop*/
+@media screen and (min-width: 1024px) {
+  .explore-restaurants__title {
+    font-size: 40px;
+  }
+}
 /* Restaurants */
 .restaurants {
   margin: 55px 20px 65px;
@@ -112,7 +128,7 @@ ul {
 }
 .restaurants .restaurants__cards .restaurants__cards__link {
   display: grid;
-  grid-template: 70% 30%/75% 25%;
+  grid-template: 65% 30%/75% 25%;
   background: #ffffff;
   color: #000;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -139,17 +155,18 @@ ul {
   margin-right: 15px;
 }
 .restaurants .restaurants__cards .restaurants__cards__news .restaurants__cards__news__text {
-  height: 20px;
+  height: 30px;
   background-color: #99e2d0;
   color: #008766;
   text-align: center;
   font-size: 14px;
   font-weight: bold;
-  padding: 8px 10px;
+  padding: 5px 1px;
   border-radius: 2px;
+  margin-top: 2px;
 }
 .restaurants .restaurants__cards .restaurants__cards__item {
-  padding: 16px 25px 16px 12px;
+  padding: 0px 25px 0px 12px;
 }
 .restaurants .restaurants__cards .restaurants__cards__item .restaurants__cards__item__text {
   margin-top: 5px;
@@ -412,6 +429,26 @@ ul {
   opacity: 0;
 }
 
+/*Media Queries desktop*/
+@media screen and (min-width: 1024px) {
+  .header-menu__image {
+    height: 375px;
+  }
+  .header-menu__section__container {
+    margin-top: 0px;
+  }
+  .header-menu__section__container__menu {
+    margin-top: 50px;
+    justify-content: center;
+    gap: 25px;
+  }
+  .header-menu__section {
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top: -113px;
+    padding: 55px 0px 5px;
+  }
+}
 /* Cards */
 .restaurant-cards--transition1 {
   margin: 40px 13px;
@@ -476,7 +513,7 @@ ul {
 }
 
 .restaurant-cards__item__info h3 {
-  font-weight: 500;
+  font-weight: 600;
   margin: 0;
 }
 
@@ -525,6 +562,18 @@ ul {
   margin-right: -60px;
 }
 
+/*Media Queries desktop*/
+@media screen and (min-width: 1024px) {
+  .restaurant-cards--transition1 {
+    margin: 45px 150px;
+  }
+  .restaurant-cards--transition2 {
+    margin: 45px 150px;
+  }
+  .restaurant-cards--transition3 {
+    margin: 45px 150px;
+  }
+}
 .button-command {
   display: block;
   border-radius: 25px;
@@ -550,6 +599,12 @@ ul {
   transition: all 0.3s ease-in-out 0.3s;
 }
 
+/*Media Queries desktop*/
+@media screen and (min-width: 1024px) {
+  .button-command {
+    margin-bottom: 50px;
+  }
+}
 /*footer*/
 .footer {
   background: #353535;
