@@ -325,6 +325,62 @@ ul {
     padding-left: 20px;
   }
 }
+.loader {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  animation: loader 2s linear forwards;
+}
+.loader .welcome {
+  font-size: 30px;
+}
+.loader .welcome span {
+  display: inline-block;
+  color: #9356dc;
+  animation: pulse 0.5s reverse infinite;
+  padding-left: 15px;
+}
+.loader .welcome span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.loader .welcome span:nth-child(2) {
+  animation-delay: 0.2s;
+  color: #fff;
+}
+.loader .welcome span:nth-child(3) {
+  animation-delay: 0.3s;
+  color: #fff;
+}
+.loader .welcome span:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+@keyframes loader {
+  0%, 25%, 50%, 95% {
+    z-index: 1;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    z-index: -1;
+    opacity: 0;
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.8);
+  }
+}
 /*header*/
 .main-header {
   position: relative;
@@ -449,19 +505,39 @@ ul {
     padding: 55px 0px 5px;
   }
 }
-/* Cards */
+/* Cards Menu anim */
 .restaurant-cards--transition1 {
   margin: 40px 13px;
+  animation: transition 1s ease-out 0.5s forwards;
+  opacity: 0;
 }
 
 .restaurant-cards--transition2 {
   margin: 40px 13px;
+  animation: transition 1s ease-out 1.5s forwards;
+  opacity: 0;
 }
 
 .restaurant-cards--transition3 {
   margin: 40px 13px;
+  animation: transition 1s ease-out 2s forwards;
+  opacity: 0;
 }
 
+/* keyframes*/
+@keyframes transition {
+  0% {
+    opacity: 0;
+    margin-left: -20px;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 13px;
+  }
+}
 .restaurant-cards__title {
   font-weight: 300;
   margin-bottom: 12px;
@@ -479,6 +555,7 @@ ul {
 
 .restaurant-cards__items {
   width: 100%;
+  height: 70px;
   background: #ffffff;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
@@ -558,8 +635,19 @@ ul {
   color: #99e2d0;
 }
 
+/*Cards select anim*/
 .restaurant-cards__items .restaurant-cards__item--gap {
   margin-right: -60px;
+}
+
+.restaurant-cards__items:hover .restaurant-cards__item--gap {
+  transform: translateX(-60px);
+  transition: transform 0.8s ease-in;
+}
+
+.restaurant-cards__items:not(:hover) .restaurant-cards__item--gap {
+  transform: translateX(0);
+  transition: transform 0.8s ease-in;
 }
 
 /*Media Queries desktop*/
