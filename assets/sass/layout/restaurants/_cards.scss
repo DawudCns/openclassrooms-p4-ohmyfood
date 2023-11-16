@@ -117,7 +117,7 @@
 .restaurant-cards__item__check {
   width: 60px;
   background-color: #99e2d0;
-  height: 69px;
+  height: 70px;
   border-radius: 0px 15px 15px 0px;
   display: flex;
   align-items: center;
@@ -150,12 +150,12 @@
 /*Media Queries desktop*/
 @media screen and (min-width: 1024px) {
   .restaurant-cards--transition1 {
-    margin: 45px 150px;
+    padding: 0px 100px;
   }
   .restaurant-cards--transition2 {
-    margin: 45px 150px;
+    padding: 0px 100px;
   }
   .restaurant-cards--transition3 {
-    margin: 45px 150px;
+    padding: 0px 100px;
   }
 }
